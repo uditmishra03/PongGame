@@ -13,10 +13,6 @@ r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 ball = Ball()
 
-
-# screen.update()
-
-
 screen.listen()
 # movement of paddles using onkey method of Turtle class.
 screen.onkey(r_paddle.go_up, "Up")
