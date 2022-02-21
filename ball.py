@@ -26,6 +26,7 @@ class Ball(Turtle):
     def bounce_x(self):
         self.x_move *= -1
 
-    def game_over(self):
+    def reset_game(self):
         self.goto(0, 0)
-        self.write("GAME OVER!", align=ALIGNMENT, font=FONT)
+        self.bounce_x()
+
